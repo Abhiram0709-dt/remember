@@ -11,11 +11,15 @@ in proxy settings under proxy listeners  edit -> select all interfaces and then 
 now in mobile: example.com ->burpsuit sees the http history(req) and res.
 options/proxy settings->import/export CA certificate->Certificate in DER format->select file-> Downloads->give name as burpcer.der
 Local\Android\Sdk\platform-tools>adb push C:\Users\Admin\Downloads\burpcer.cer /sdcard/Download/
+
+
 2)Testing Iot device Security (default passwords and ports)
 docker run -d -p 8090:3000 --name juiceshop bkimminich/juice-shop and open the browser localhost:8090
 ipconfig (copy ip4 address)
 in kali linux: nmap -sV 192.168.0.148 
 run the website (login using ' OR 1=1 -- - , open network tab and see the xhr)
+
+
 3)creating and analyzing disk image using dc3dd and autopsy
 in kali linux: echo "Cybersecurity Lab Evidence" > evidence.txt
 lsblk
@@ -24,6 +28,8 @@ disk image created: dd if=/dev/zero of=practice_disk.dd bs=1M count=100
 mount the disk: mkfs.ext4 practice_disk.dd
 to verify: ls -lh practice_disk.dd
 sudo autopsy and open the website and add the case
+
+
 4)log file analysis for incident detection lab
 cd /var/log ,last 
 journalctl | less
