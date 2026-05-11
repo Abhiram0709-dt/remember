@@ -36,3 +36,12 @@ def lambda_handler(event, context):
             'sum': result
         })
     }
+def lambda_handler(event, context):
+    for record in event['Records']:
+        print("Message received from SQS:")
+        print(record['body'])
+    return {
+        'statusCode': 200,
+        'body': 'Message processed successfully'
+    }
+
