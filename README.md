@@ -24,6 +24,8 @@ UUID=(copied uuid) /mnt/abhiram xfs defaults,nofail 0 0
 test using:sudo mount -a
 
 
+efs:
+yum install -y amazon-efs-utils
 
 lambda :
 def lambda_handler(event, context):
